@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.Navbar {
+  height: 120px;
+  background-color: #cfcfcf63;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  .LogoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-items: center;
+    .image {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .logo_text {
+      margin-left: 20px;
+      color: #2bbed198;
+    }
+  }
+}
+.Content {
+  display: flex;
+  
+  flex: 1 0 auto;
+  margin:50px auto;
+  .InfoContainer {
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    .info-cards {
+      display: flex;
+      flex-direction: row;
+    }
+    .info-chart {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  .CountryTableContainer {
+    display: flex;
+    max-height: 500px;
+  flex:1;
+  }
+}
+.Footer {
+  height: 50px;
+  background-color: #cfcfcf63;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .Content {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,32 @@
+.CountryTableContainer {
+  display: flex;
+  .card-body {
+    flex: 1;
+  }
+  .table {
+    height: 100%;
+
+    th {
+      background-color: #cc1034;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+.table-row {
+  cursor: pointer;
+  &:nth-of-type(odd) {
+    background-color: #e6e6e6;
+  }
+  &:hover {
+    background-color: #bdbaba;
+  }
+}
+.active {
+  background-color: #cc1034 !important;
+  tr,
+  td {
+    color: white !important;
+    font-weight: bold;
+  }
+}

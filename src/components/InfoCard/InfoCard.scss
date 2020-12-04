@@ -1,0 +1,32 @@
+.Card {
+  margin: 0 10px !important;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+.Deaths {
+  border-bottom: 10px solid rgba(238, 80, 80, 0.7);
+  transform: scale(1.07);
+}
+.Cases {
+  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+  transform: scale(1.07);
+}
+.Recovered {
+  border-bottom: 10px solid rgba(61, 163, 35, 0.7);
+  transform: scale(1.07);
+}
+
+.info__deaths {
+  color: rgba(238, 80, 80, 0.7) !important;
+}
+.info__cases {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.info__recovered {
+  color: rgba(61, 163, 35, 0.7) !important;
+}
+@media (max-width: 960px) {
+  .Card {
+    margin: 3% 0 !important;
+  }
+}
